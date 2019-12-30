@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });  
+  </script>
+
+</head>
+
+
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <!--img src="sat_logo.gif" width="230" height="100"-->
+         У Моти
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">
+          Home
+        </a>
+
+        <a class="navbar-item">
+          Форум
+        </a>
+
+        <a class="navbar-item">
+          Фотогалерея
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Фотогалерея 360°
+          </a>
+
+        <!--div class="navbar-item has-dropdown is-hoverable ">
+            <a class="navbar-link">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div-->
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/panoramas/germany.html">
+              Германия
+            </a>
+            <a class="navbar-item" href="/panoramas/italy.html">
+              Италия
+            </a>
+            <a class="navbar-item">
+              Польша
+            </a>
+
+            <a class="navbar-item">
+            Греция 
+
+            <a class="navbar-item">
+            Испания 
+          </a>
+            <a class="navbar-item">
+            Австрия 
+          </a>
+            <a class="navbar-item">
+            Португалия 
+          </a>
+            <a class="navbar-item">
+            Швейцария 
+          </a>
+            <a class="navbar-item">
+            Бельгия 
+          </a>
+            <a class="navbar-item">
+            Турция 
+          </a>
+
+
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Другое
+            </a>
+
+
+            
+          </div>
+        </div>
+
+
+    
+      </div>
+      
+
+      
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a>
+              <!--strong>Sign up</!--strong-->
+              <img src="Russ.png">
+            </a>
+            <a>
+              <img src="Ger.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--aside class="menu">
+    <p class="menu-label">
+      General
+    </p>
+    <ul class="menu-list">
+      <li><a>Dashboard</a></li>
+      <li><a>Customers</a></li>
+    </ul>
+    <p class="menu-label">
+      Administration
+    </p>
+    <ul class="menu-list">
+      <li><a>Team Settings</a></li>
+      <li>
+        <a class="is-active">Manage Your Team</a>
+        <ul>
+          <li><a>Members</a></li>
+          <li><a>Plugins</a></li>
+          <li><a>Add a member</a></li>
+        </ul>
+      </li>
+      <li><a>Invitations</a></li>
+      <li><a>Cloud Storage Environment Settings</a></li>
+      <li><a>Authentication</a></li>
+    </ul>
+    <p class="menu-label">
+      Transactions
+    </p>
+    <ul class="menu-list">
+      <li><a>Payments</a></li>
+      <li><a>Transfers</a></li>
+      <li><a>Balance</a></li>
+    </ul>
+  </aside -->
+
+
+  <section-- class="section">
+
+
+
+        <h1 class="title">Германия</h1>
+        <div  class="tile is-ancestor">
+          <div class="tile is-parent">          
+            <!--a href="pano/hameln.php" title="VT Хамельн"><span>VT&nbsp;Хамельн</span></a></li-->
+            <div class="tile is-child box" >
+            <h2 class="title">Ганновер</h2>
+              <ul>
+                <li><a href="pano/congress.php" title="Конгресс"><span>Конгресс</span></a></li>
+                <li><a href="pano/aegidienkirche.php" title="Agidienkirche"><span>Aegidienkirche</span></a></li>
+                <li><a href="pano/NordLB.php" title="Nord LB"><span>Nord LB</span></a></li>
+                <li><a title="Rathaus"><span>Rathaus</span></a>
+                  <ul>
+                    <li><a href="pano/rathaus1.php" title="Rathaus 1"><span>Rathaus 1</span></a>
+                    <li><a href="pano/rathaus2.php" title="Rathaus 2"><span>Rathaus 2</span></a>
+                    <li><a href="pano/rathaus3.php" title="Rathaus 3"><span>Rathaus 3</span></a>
+                  </ul>
+                </li>
+                <li><a href="pano/piramide.php" title="Пирамида"><span>Пирамида</span></a></li>
+                <li><a href="pano/concordia.php" title="Конкордия"><span>Конкордия</span></a></li>
+                <li><a href="pano/kaulbachstrasse.php" title="Каульбахстрассе"><span>Каульбахстрассе</span></a></li>
+                <li><a href="pano/ksa.php" title="Остановка"><span>Остановка</span></a></li>
+                <li><a href="pano/tiergarten.php" title="Tiergarten"><span>Tiergarten</span></a></li>
+                <li><a href="pano/muhle.php" title="Мельница"><span>Мельница</span></a></li>
+                <li><a href="pano/B65.php" title="Дорога B65"><span>Дорога B65</span></a></li>
+              </ul>            
+            </div>
+          
+          <div class="tile is-child box">
+            <p class="title">Бремен
+          <ul>
+            <li><a href="pano/bremen.php" title="Рыночная площадь"><span>Рыночная площадь</span></a>
+            <li><a href="pano/bremen1.php" title="Собор Св.Петра"><span>Собор Св.Петра</span></a>
+            <li><a href="pano/bremen2.php" title="Rathaus Бремен"><span>Rathaus Бремен</span></a>
+            </li>
+          </ul>
+          </div>
+          <div class="tile is-child box">
+            <p class="title">Берлин
+          <ul>
+
+            <li><a href="pano/spreefalallee.php" title="Шпреефальаллея"><span>Шпреефальаллея</span></a>
+            <li><a href="pano/charlottenburg.php" title="Шарлоттенбург"><span>Шарлоттенбург</span></a>
+            <li><a href="pano/charlottenburg1.php" title="Шарлоттенбург 1"><span>Шарлоттенбург 1</span></a>
+            <li><a href="pano/muhlendamm.php" title="Мюлендамбрюке"><span>Мюлендамбрюке</span></a>
+            <li><a href="pano/reichstag.php" title="Рейхстаг"><span>Рейхстаг</span></a>
+            
+          </ul>
+        </div>
+        </div>
+      </div>
+
+
+</section>
+</body>
+
+</html>
+
+
+
+<!--div id="wb_menu2" ><div class="wb_block_out" style="position: relative;"><div class="hmenu" id="wb_menu_0">
+        <ul>
+        <li class="selected first"><a class="selected first" href="indexRU.php" title="Home"><span>Home</span></a></li>
+        <li ><a  href="http://www.mot1.eu/forum/" title="Форум"><span>Форум</span></a></li>
+        <li ><a  href="http://www.mot63.com/TWGallery/" title="Фотогалерея"><span>Фотогалерея</span></a></li>
+	 <li ><a  href="2.php" title="Фотогалерея сферических панорам с музыкой" alt="Сферические панорамы с музыкой"><span>Фотогалерея&nbsp;360°</span></a></li-->

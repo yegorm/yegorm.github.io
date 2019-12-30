@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });  
+  </script>
+
+</head>
+
+<section>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <!--img src="sat_logo.gif" width="230" height="100"-->
+         У Моти
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">
+          Home
+        </a>
+
+        <a class="navbar-item">
+          Форум
+        </a>
+
+        <a class="navbar-item">
+          Фотогалерея
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Фотогалерея 360°
+          </a>
+
+        <!--div class="navbar-item has-dropdown is-hoverable ">
+            <a class="navbar-link">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div-->
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/panoramas/germany.html">
+              Германия
+            </a>
+            <a class="navbar-item" href="/panoramas/italy.html">
+              Италия
+            </a>
+            <a class="navbar-item">
+              Польша
+            </a>
+
+            <a class="navbar-item">
+            Греция 
+
+            <a class="navbar-item">
+            Испания 
+          </a>
+            <a class="navbar-item">
+            Австрия 
+          </a>
+            <a class="navbar-item">
+            Португалия 
+          </a>
+            <a class="navbar-item">
+            Швейцария 
+          </a>
+            <a class="navbar-item">
+            Бельгия 
+          </a>
+            <a class="navbar-item">
+            Турция 
+          </a>
+
+
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Другое
+            </a>
+
+
+            
+          </div>
+        </div>
+
+
+    
+      </div>
+      
+
+      
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a>
+              <!--strong>Sign up</!--strong-->
+              <img src="Russ.png">
+            </a>
+            <a>
+              <img src="Ger.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section-- class="section">
+
+
+
+        <h1 class="title">Италия</h1>
+
+
+
+
+
+
+</section>
+</body>
+
+</html>
+
+
